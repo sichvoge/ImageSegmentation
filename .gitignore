@@ -1,0 +1,15 @@
+# eclipse project files 
+.classpath
+.project
+.settings
+
+# compiled sources 
+bin
+*.class
+
+# Mac
+.DS_Store
+
+# do not ignore this file 
+!.gitignore
+
