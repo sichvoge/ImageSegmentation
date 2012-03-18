@@ -19,7 +19,7 @@ public class ImageUtil {
 		return Image.createImage(norm);
 	}
 	
-	public static Image processGayScaling(Image image) {
+	public static Image processGrayScaling(Image image) {
 		RGBEntry[][] color = image.getColorEntries();
 		
 		RGBEntry[][] norm = new RGBEntry[color.length][color[0].length];

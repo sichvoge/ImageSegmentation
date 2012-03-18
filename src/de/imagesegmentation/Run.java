@@ -16,7 +16,7 @@ public class Run {
 		ImageClient c1 = new ImageClient();
 		c1.show(img);
 		
-		Image image = ImageUtil.processGayScaling(img);
+		Image image = ImageUtil.processGrayScaling(img);
 		ImageClient c2 = new ImageClient();
 		c2.show(image);
 	}
