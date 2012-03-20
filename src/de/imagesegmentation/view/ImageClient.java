@@ -12,22 +12,15 @@ public class ImageClient {
 	public ImageClient() {}
 	
 	public void show(String filename) {
-		
-		JFrame f = new JFrame("Load Image Sample");
-        
-		f.addWindowListener(new WindowAdapter() {
-               public void windowClosing(WindowEvent e) {
-                   System.exit(0);
-               }
-		});
-
-		f.add(new ImagePanel(filename));
-		f.pack();
-		f.setVisible(true);
+		this.show(new ImagePanel(filename));
 	}
 	
 	public void show(Image img) {
-		JFrame f = new JFrame("Load Image Sample");
+		this.show(new ImagePanel(img));
+	}
+	
+	public void show(ImagePanel panel) {
+		JFrame f = new JFrame("Image Sample");
         
 		f.addWindowListener(new WindowAdapter() {
                public void windowClosing(WindowEvent e) {
@@ -35,7 +28,7 @@ public class ImageClient {
                }
 		});
 
-		f.add(new ImagePanel(img));
+		f.add(panel);
 		f.pack();
 		f.setVisible(true);
 	}
